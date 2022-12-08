@@ -15,11 +15,12 @@ public class Day6 {
         char[] input = testInput.toCharArray();
         int packetIndicator = 0;
         char packetIndicatorChar = '0';
-        ArrayList<Character> characters = new ArrayList<Character>();
+        ArrayList<Character> characters = new ArrayList<>();
+        int problemIndicator = 14; // 4 for problem 1 , 14 for problem 2
         for (int i = 0; i < input.length; i++) {
             char character = input[i];
             characters.add(character);
-            int problemIndicator = 14; // 4 for problem 1 , 14 for problem 2
+
             if (characters.size() >= problemIndicator){
 
                 List<Character> lastFour = characters.subList(characters.size()-problemIndicator, characters.size());
